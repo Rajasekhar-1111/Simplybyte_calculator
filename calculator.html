@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jenkins Updated Calculator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator Version 2</title>
 
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #1e1e2f;
+      background: black;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -18,15 +18,16 @@
     }
 
     h2 {
-      color: white;
+      color: yellow;
       margin-bottom: 20px;
+      font-size: 30px;
     }
 
     .calculator {
-      background: #2c3e50;
+      background: gold;
       padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(255,255,255,0.2);
+      border-radius: 15px;
+      box-shadow: 0 0 20px white;
     }
 
     #result {
@@ -36,9 +37,9 @@
       text-align: right;
       padding-right: 10px;
       margin-bottom: 10px;
-      border: 1px solid #ccc;
-      background: #ecf0f1;
-      color: #2c3e50;
+      border: 2px solid black;
+      background: white;
+      color: black;
       box-sizing: border-box;
     }
 
@@ -52,28 +53,29 @@
       height: 60px;
       font-size: 1.2rem;
       border: none;
-      border-radius: 6px;
-      background: #3498db;
+      border-radius: 8px;
+      background: deeppink;
       color: white;
       cursor: pointer;
+      font-weight: bold;
     }
 
     .buttons button:hover {
-      opacity: 0.9;
+      opacity: 0.8;
     }
 
     .buttons button.operator {
-      background: #9b59b6;
+      background: purple;
     }
 
     .buttons button.equal {
-      background: #2ecc71;
+      background: green;
       color: white;
       grid-column: span 2;
     }
 
     .buttons button.clear {
-      background: #e74c3c;
+      background: red;
       color: white;
       grid-column: span 2;
     }
@@ -82,10 +84,10 @@
 
 <body>
 
-  <h2>🚀 Jenkins Auto Updated Calculator</h2>
+  <h2>🚀 Jenkins Auto Updated Calculator - Version 2</h2>
 
   <div class="calculator">
-    <input type="text" id="result" disabled />
+    <input type="text" id="result" disabled>
 
     <div class="buttons">
       <button onclick="appendValue('7')">7</button>
